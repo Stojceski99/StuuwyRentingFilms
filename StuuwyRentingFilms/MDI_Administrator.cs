@@ -103,7 +103,7 @@ namespace StuuwyRentingFilms
         private void iconAddNewMovie_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            //OpenChildForm(new Add_New_Movie());
+            OpenChildForm(new Add_Movie());
         }
         private void iconIssueMovie_Click(object sender, EventArgs e)
         {
@@ -120,6 +120,7 @@ namespace StuuwyRentingFilms
         private void iconAddUser_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
+            OpenChildForm(new Register());
         }
         private void iconViewUserInfo_Click(object sender, EventArgs e)
         {
