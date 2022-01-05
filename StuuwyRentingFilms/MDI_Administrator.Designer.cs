@@ -30,25 +30,11 @@ namespace StuuwyRentingFilms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.SuspendLayout();
-            // 
-            // MDI_Administrator
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(737, 523);
-            this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Name = "MDI_Administrator";
-            this.Text = "MDIParent1";
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "MDI_Administrator";
         }
+
         #endregion
-        private System.Windows.Forms.ToolTip toolTip;
     }
 }
-
-
-

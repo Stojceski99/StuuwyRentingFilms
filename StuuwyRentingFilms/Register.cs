@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using System.Text.RegularExpressions; // biblioteka za ne-mutiracki regularni izrazi [regex] - ja koristam za validacija na EMAIL adresa 57 programski red
+using System.Text.RegularExpressions; // biblioteka za ne-mutiracki regularni izrazi [regex] - ja koristam za validacija na EMAIL adresa 84 programski red
 using System.Data.SqlClient;
 
 namespace StuuwyRentingFilms
@@ -63,8 +63,7 @@ namespace StuuwyRentingFilms
             {
                 try
                 {
-                    String query = "INSERT INTO movieUser (firstName,lastName,studentIndeks,email,password) VALUES ('" + userFirst.Text + "','" + userLast.Text + "'," +
-                        "" + userEmail.Text + ",'" + "'" + userPassword.Text + "')";
+                    String query = "INSERT INTO movieUser (firstName,lastName,email,password) VALUES ('" + userFirst.Text + "','" + userLast.Text + "','" + userEmail.Text + "','" + userPassword.Text + "')";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("You were registered successufully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -128,6 +127,23 @@ namespace StuuwyRentingFilms
             {
                 return true;
             }
+        }
+        private void iconClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void iconMaximaze_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+                WindowState = FormWindowState.Normal;
+        }
+        private void iconMinimaze_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

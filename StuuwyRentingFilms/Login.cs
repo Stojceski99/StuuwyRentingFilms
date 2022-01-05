@@ -44,7 +44,7 @@ namespace StuuwyRentingFilms
                 label3.Text = "All field's are required.";
                 MessageBox.Show("Enter username and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); // ispisi poraka
             }
-            else if (countAdministrator == 0 && countUser == 0) // ako metodot ExecuteNonQuery() vrati rezultat 0 [nema kolona so takva kombinacija na "username" i "password"]
+            else if (countAdministrator == 0 && countUser == 0) // ako metodot  () vrati rezultat 0 [nema kolona so takva kombinacija na "username" i "password"]
             {
                 label3.Text = "Credentials don't match.";
                 MessageBox.Show("Credentials don't match.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); // ispisi poraka
@@ -114,6 +114,32 @@ namespace StuuwyRentingFilms
             this.Hide();
             Register rf = new Register();
             rf.Show();
+        }
+
+        private void textBox2_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == 13)
+                button1_Click(sender, e);
+        }
+
+        private void iconClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void iconMaximaze_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+                WindowState = FormWindowState.Normal;
+        }
+
+        private void iconMinimaze_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }
