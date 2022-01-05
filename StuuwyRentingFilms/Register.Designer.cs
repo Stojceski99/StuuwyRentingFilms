@@ -42,13 +42,7 @@ namespace StuuwyRentingFilms
             this.userConPass = new System.Windows.Forms.TextBox();
             this.labelControl = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.iconMinimaze = new FontAwesome.Sharp.IconPictureBox();
-            this.iconMaximaze = new FontAwesome.Sharp.IconPictureBox();
-            this.iconClose = new FontAwesome.Sharp.IconPictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconMinimaze)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconMaximaze)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconClose)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -171,9 +165,6 @@ namespace StuuwyRentingFilms
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel1.Controls.Add(this.iconMinimaze);
-            this.panel1.Controls.Add(this.iconMaximaze);
-            this.panel1.Controls.Add(this.iconClose);
             this.panel1.Controls.Add(this.labelFirst);
             this.panel1.Controls.Add(this.labelControl);
             this.panel1.Controls.Add(this.button1);
@@ -192,54 +183,6 @@ namespace StuuwyRentingFilms
             this.panel1.Size = new System.Drawing.Size(388, 358);
             this.panel1.TabIndex = 15;
             // 
-            // iconMinimaze
-            // 
-            this.iconMinimaze.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconMinimaze.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.iconMinimaze.ForeColor = System.Drawing.Color.MediumPurple;
-            this.iconMinimaze.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.iconMinimaze.IconColor = System.Drawing.Color.MediumPurple;
-            this.iconMinimaze.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconMinimaze.IconSize = 24;
-            this.iconMinimaze.Location = new System.Drawing.Point(324, 0);
-            this.iconMinimaze.Name = "iconMinimaze";
-            this.iconMinimaze.Size = new System.Drawing.Size(24, 24);
-            this.iconMinimaze.TabIndex = 17;
-            this.iconMinimaze.TabStop = false;
-            this.iconMinimaze.Click += new System.EventHandler(this.iconMinimaze_Click);
-            // 
-            // iconMaximaze
-            // 
-            this.iconMaximaze.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconMaximaze.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.iconMaximaze.ForeColor = System.Drawing.Color.MediumPurple;
-            this.iconMaximaze.IconChar = FontAwesome.Sharp.IconChar.WindowRestore;
-            this.iconMaximaze.IconColor = System.Drawing.Color.MediumPurple;
-            this.iconMaximaze.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconMaximaze.IconSize = 24;
-            this.iconMaximaze.Location = new System.Drawing.Point(345, 0);
-            this.iconMaximaze.Name = "iconMaximaze";
-            this.iconMaximaze.Size = new System.Drawing.Size(24, 24);
-            this.iconMaximaze.TabIndex = 16;
-            this.iconMaximaze.TabStop = false;
-            this.iconMaximaze.Click += new System.EventHandler(this.iconMaximaze_Click);
-            // 
-            // iconClose
-            // 
-            this.iconClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.iconClose.ForeColor = System.Drawing.Color.MediumPurple;
-            this.iconClose.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.iconClose.IconColor = System.Drawing.Color.MediumPurple;
-            this.iconClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconClose.IconSize = 24;
-            this.iconClose.Location = new System.Drawing.Point(366, 0);
-            this.iconClose.Name = "iconClose";
-            this.iconClose.Size = new System.Drawing.Size(24, 24);
-            this.iconClose.TabIndex = 15;
-            this.iconClose.TabStop = false;
-            this.iconClose.Click += new System.EventHandler(this.iconClose_Click);
-            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -254,9 +197,6 @@ namespace StuuwyRentingFilms
             this.Load += new System.EventHandler(this.Register_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconMinimaze)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconMaximaze)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconClose)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -276,8 +216,5 @@ namespace StuuwyRentingFilms
         private System.Windows.Forms.TextBox userConPass;
         private System.Windows.Forms.Label labelControl;
         private System.Windows.Forms.Panel panel1;
-        private FontAwesome.Sharp.IconPictureBox iconMinimaze;
-        private FontAwesome.Sharp.IconPictureBox iconMaximaze;
-        private FontAwesome.Sharp.IconPictureBox iconClose;
     }
 }

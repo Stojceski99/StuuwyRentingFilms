@@ -126,6 +126,7 @@ namespace StuuwyRentingFilms
         private void iconViewUserInfo_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
+            OpenChildForm(new View_User_Info());
         }
         private void iconUpdateMovieInfo_Click(object sender, EventArgs e)
         {
