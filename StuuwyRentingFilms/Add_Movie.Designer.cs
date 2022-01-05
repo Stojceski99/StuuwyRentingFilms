@@ -196,6 +196,7 @@ namespace StuuwyRentingFilms
             this.Controls.Add(this.panelBackgroung);
             this.Name = "Add_Movie";
             this.Text = "Add Movie";
+            this.Load += new System.EventHandler(this.Add_Movie_Load);
             this.panelBackgroung.ResumeLayout(false);
             this.panelBackgroung.PerformLayout();
             this.ResumeLayout(false);

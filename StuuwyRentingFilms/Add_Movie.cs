@@ -146,5 +146,14 @@ namespace StuuwyRentingFilms
             if (e.KeyValue == 13)
                 button1_Click(sender, e);
         }
+
+        private void Add_Movie_Load(object sender, EventArgs e)
+        {
+            if (con.State == ConnectionState.Open)
+            {
+                con.Close();
+            }
+            con.Open();
+        }
     }
 }

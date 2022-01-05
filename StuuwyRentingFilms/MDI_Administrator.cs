@@ -121,6 +121,7 @@ namespace StuuwyRentingFilms
         {
             ActivateButton(sender, RGBColors.color5);
             OpenChildForm(new Register());
+            lblTitleChildForm.Text = "Register";
         }
         private void iconViewUserInfo_Click(object sender, EventArgs e)
         {
@@ -129,6 +130,7 @@ namespace StuuwyRentingFilms
         private void iconUpdateMovieInfo_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color7);
+            OpenChildForm(new Update_Movie());
         }
         private void iconUserLogout_Click(object sender, EventArgs e)
         {
