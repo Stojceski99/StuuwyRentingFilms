@@ -46,11 +46,17 @@ namespace StuuwyRentingFilms
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.iconMinimaze = new FontAwesome.Sharp.IconPictureBox();
+            this.iconMaximaze = new FontAwesome.Sharp.IconPictureBox();
+            this.iconClose = new FontAwesome.Sharp.IconPictureBox();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconMinimaze)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconMaximaze)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconClose)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -278,6 +284,9 @@ namespace StuuwyRentingFilms
             // panelTitleBar
             // 
             this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.panelTitleBar.Controls.Add(this.iconMinimaze);
+            this.panelTitleBar.Controls.Add(this.iconMaximaze);
+            this.panelTitleBar.Controls.Add(this.iconClose);
             this.panelTitleBar.Controls.Add(this.lblTitleChildForm);
             this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -330,6 +339,54 @@ namespace StuuwyRentingFilms
             this.panelDesktop.Size = new System.Drawing.Size(1070, 602);
             this.panelDesktop.TabIndex = 3;
             // 
+            // iconMinimaze
+            // 
+            this.iconMinimaze.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconMinimaze.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.iconMinimaze.ForeColor = System.Drawing.Color.MediumPurple;
+            this.iconMinimaze.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.iconMinimaze.IconColor = System.Drawing.Color.MediumPurple;
+            this.iconMinimaze.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconMinimaze.IconSize = 24;
+            this.iconMinimaze.Location = new System.Drawing.Point(999, 0);
+            this.iconMinimaze.Name = "iconMinimaze";
+            this.iconMinimaze.Size = new System.Drawing.Size(24, 24);
+            this.iconMinimaze.TabIndex = 7;
+            this.iconMinimaze.TabStop = false;
+            this.iconMinimaze.Click += new System.EventHandler(this.iconMinimaze_Click);
+            // 
+            // iconMaximaze
+            // 
+            this.iconMaximaze.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconMaximaze.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.iconMaximaze.ForeColor = System.Drawing.Color.MediumPurple;
+            this.iconMaximaze.IconChar = FontAwesome.Sharp.IconChar.WindowRestore;
+            this.iconMaximaze.IconColor = System.Drawing.Color.MediumPurple;
+            this.iconMaximaze.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconMaximaze.IconSize = 24;
+            this.iconMaximaze.Location = new System.Drawing.Point(1020, 0);
+            this.iconMaximaze.Name = "iconMaximaze";
+            this.iconMaximaze.Size = new System.Drawing.Size(24, 24);
+            this.iconMaximaze.TabIndex = 6;
+            this.iconMaximaze.TabStop = false;
+            this.iconMaximaze.Click += new System.EventHandler(this.iconMaximaze_Click);
+            // 
+            // iconClose
+            // 
+            this.iconClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.iconClose.ForeColor = System.Drawing.Color.MediumPurple;
+            this.iconClose.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.iconClose.IconColor = System.Drawing.Color.MediumPurple;
+            this.iconClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconClose.IconSize = 24;
+            this.iconClose.Location = new System.Drawing.Point(1041, 0);
+            this.iconClose.Name = "iconClose";
+            this.iconClose.Size = new System.Drawing.Size(24, 24);
+            this.iconClose.TabIndex = 5;
+            this.iconClose.TabStop = false;
+            this.iconClose.Click += new System.EventHandler(this.iconClose_Click);
+            // 
             // MDI_Administrator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -348,6 +405,9 @@ namespace StuuwyRentingFilms
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconMinimaze)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconMaximaze)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconClose)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -370,5 +430,8 @@ namespace StuuwyRentingFilms
         private System.Windows.Forms.Label lblTitleChildForm;
         private System.Windows.Forms.Panel panelShadow;
         private System.Windows.Forms.Panel panelDesktop;
+        private FontAwesome.Sharp.IconPictureBox iconMinimaze;
+        private FontAwesome.Sharp.IconPictureBox iconMaximaze;
+        private FontAwesome.Sharp.IconPictureBox iconClose;
     }
 }
