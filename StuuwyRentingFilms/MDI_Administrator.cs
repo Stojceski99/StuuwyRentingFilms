@@ -108,10 +108,13 @@ namespace StuuwyRentingFilms
         private void iconIssueMovie_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new Issue_Book());
+
         }
         private void iconMovieRecord_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
+
         }
         private void iconMovieReport_Click(object sender, EventArgs e)
         {

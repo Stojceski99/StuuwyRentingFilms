@@ -47,23 +47,6 @@ namespace StuuwyRentingFilms
                 }
             }
         }
-        private void textBoxMovieTitle_KeyDown(object sender, KeyEventArgs e)
-        {
-            listBox1.Focus();
-            //listBox1.SelectedIndex = 0;
-        }
-        private void listBox1_KeyDown(object sender, KeyEventArgs e)
-        {
-            textBoxMovieTitle.Text = listBox1.SelectedItem.ToString();
-            listBox1.Visible = false;
-        }
-
-        private void listBox1_MouseClick(object sender, MouseEventArgs e)
-        {
-            textBoxMovieTitle.Text = listBox1.SelectedItem.ToString();
-            listBox1.Visible = false;
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             int checkBookQuantity = 0;
@@ -83,7 +66,7 @@ namespace StuuwyRentingFilms
             if (checkBookQuantity > 0)
             {
                 // Query for inserting information about issued movie in database
-                String query = "INSERT INTO MovieIssue VALUES(" + textBoxMovieTitle.Text + ",'" + textBox1.Text + "','" + dateTimePicker1.Value.ToShortDateString() + "','')";
+                String query = "INSERT INTO MovieIssue VALUES('" + textBoxMovieTitle.Text + "','" + textBox1.Text + "','" + dateTimePicker1.Value.ToShortDateString() + "','')";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.ExecuteNonQuery();
 
