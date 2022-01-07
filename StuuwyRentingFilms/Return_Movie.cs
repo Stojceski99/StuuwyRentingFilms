@@ -21,20 +21,20 @@ namespace StuuwyRentingFilms
         //EVENTS
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            panel4.Visible = true;
-            int i = Convert.ToInt32(dataGridView1.SelectedCells[0].Value.ToString());
-            String query = "SELECT * FROM MovieIssue WHERE ID =" + i + "";
-            SqlCommand cmd = new SqlCommand(query, con);
-            cmd.ExecuteNonQuery();
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
+                panel4.Visible = true;
+                int i = Convert.ToInt32(dataGridView1.SelectedCells[0].Value.ToString());
+                String query = "SELECT * FROM MovieIssue WHERE ID =" + i + "";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
 
-            foreach (DataRow dr in dt.Rows)
-            {
-                lblTitleInv.Text = dr["movieTitle"].ToString();
-                lblIssueInv.Text = dr["movieIssueDate"].ToString();
-            }
+                foreach (DataRow dr in dt.Rows)
+                {
+                    lblTitleInv.Text = dr["movieTitle"].ToString();
+                    lblIssueInv.Text = dr["movieIssueDate"].ToString();
+                }
         }
         private void Return_Movie_Load(object sender, EventArgs e)
         {

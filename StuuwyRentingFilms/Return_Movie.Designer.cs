@@ -82,7 +82,7 @@ namespace StuuwyRentingFilms
             // 
             this.lblIssueInv.AutoSize = true;
             this.lblIssueInv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblIssueInv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(90)))));
+            this.lblIssueInv.ForeColor = System.Drawing.Color.Red;
             this.lblIssueInv.Location = new System.Drawing.Point(133, 58);
             this.lblIssueInv.Name = "lblIssueInv";
             this.lblIssueInv.Size = new System.Drawing.Size(0, 16);
@@ -92,7 +92,7 @@ namespace StuuwyRentingFilms
             // 
             this.lblTitleInv.AutoSize = true;
             this.lblTitleInv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitleInv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(90)))));
+            this.lblTitleInv.ForeColor = System.Drawing.Color.Red;
             this.lblTitleInv.Location = new System.Drawing.Point(133, 26);
             this.lblTitleInv.Name = "lblTitleInv";
             this.lblTitleInv.Size = new System.Drawing.Size(0, 16);
@@ -213,7 +213,6 @@ namespace StuuwyRentingFilms
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Enabled = false;
             this.dataGridView1.Location = new System.Drawing.Point(50, 1);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
@@ -226,6 +225,7 @@ namespace StuuwyRentingFilms
             this.dataGridView1.ShowRowErrors = false;
             this.dataGridView1.Size = new System.Drawing.Size(701, 205);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // Return_Movie
             // 
