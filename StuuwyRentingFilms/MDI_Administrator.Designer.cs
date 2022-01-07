@@ -34,7 +34,6 @@ namespace StuuwyRentingFilms
             this.iconUpdateMovieInfo = new FontAwesome.Sharp.IconButton();
             this.iconViewUserInfo = new FontAwesome.Sharp.IconButton();
             this.iconAddUser = new FontAwesome.Sharp.IconButton();
-            this.iconMovieReport = new FontAwesome.Sharp.IconButton();
             this.iconMovieRecord = new FontAwesome.Sharp.IconButton();
             this.iconIssueMovie = new FontAwesome.Sharp.IconButton();
             this.iconAddNewMovie = new FontAwesome.Sharp.IconButton();
@@ -42,21 +41,21 @@ namespace StuuwyRentingFilms
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.PictureBox();
             this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.iconMinimaze = new FontAwesome.Sharp.IconPictureBox();
+            this.iconMaximaze = new FontAwesome.Sharp.IconPictureBox();
+            this.iconClose = new FontAwesome.Sharp.IconPictureBox();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.iconMinimaze = new FontAwesome.Sharp.IconPictureBox();
-            this.iconMaximaze = new FontAwesome.Sharp.IconPictureBox();
-            this.iconClose = new FontAwesome.Sharp.IconPictureBox();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.panelTitleBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconMinimaze)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconMaximaze)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -65,7 +64,6 @@ namespace StuuwyRentingFilms
             this.panelMenu.Controls.Add(this.iconUpdateMovieInfo);
             this.panelMenu.Controls.Add(this.iconViewUserInfo);
             this.panelMenu.Controls.Add(this.iconAddUser);
-            this.panelMenu.Controls.Add(this.iconMovieReport);
             this.panelMenu.Controls.Add(this.iconMovieRecord);
             this.panelMenu.Controls.Add(this.iconIssueMovie);
             this.panelMenu.Controls.Add(this.iconAddNewMovie);
@@ -89,7 +87,7 @@ namespace StuuwyRentingFilms
             this.iconUpdateMovieInfo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconUpdateMovieInfo.IconSize = 40;
             this.iconUpdateMovieInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconUpdateMovieInfo.Location = new System.Drawing.Point(0, 500);
+            this.iconUpdateMovieInfo.Location = new System.Drawing.Point(0, 440);
             this.iconUpdateMovieInfo.Name = "iconUpdateMovieInfo";
             this.iconUpdateMovieInfo.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconUpdateMovieInfo.Size = new System.Drawing.Size(220, 60);
@@ -112,7 +110,7 @@ namespace StuuwyRentingFilms
             this.iconViewUserInfo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconViewUserInfo.IconSize = 40;
             this.iconViewUserInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconViewUserInfo.Location = new System.Drawing.Point(0, 440);
+            this.iconViewUserInfo.Location = new System.Drawing.Point(0, 380);
             this.iconViewUserInfo.Name = "iconViewUserInfo";
             this.iconViewUserInfo.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconViewUserInfo.Size = new System.Drawing.Size(220, 60);
@@ -135,7 +133,7 @@ namespace StuuwyRentingFilms
             this.iconAddUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconAddUser.IconSize = 40;
             this.iconAddUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconAddUser.Location = new System.Drawing.Point(0, 380);
+            this.iconAddUser.Location = new System.Drawing.Point(0, 320);
             this.iconAddUser.Name = "iconAddUser";
             this.iconAddUser.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconAddUser.Size = new System.Drawing.Size(220, 60);
@@ -145,29 +143,6 @@ namespace StuuwyRentingFilms
             this.iconAddUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconAddUser.UseVisualStyleBackColor = true;
             this.iconAddUser.Click += new System.EventHandler(this.iconAddUser_Click);
-            // 
-            // iconMovieReport
-            // 
-            this.iconMovieReport.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconMovieReport.FlatAppearance.BorderSize = 0;
-            this.iconMovieReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconMovieReport.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.iconMovieReport.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconMovieReport.IconChar = FontAwesome.Sharp.IconChar.ChartBar;
-            this.iconMovieReport.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconMovieReport.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconMovieReport.IconSize = 40;
-            this.iconMovieReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconMovieReport.Location = new System.Drawing.Point(0, 320);
-            this.iconMovieReport.Name = "iconMovieReport";
-            this.iconMovieReport.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconMovieReport.Size = new System.Drawing.Size(220, 60);
-            this.iconMovieReport.TabIndex = 9;
-            this.iconMovieReport.Text = "Movie Report";
-            this.iconMovieReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconMovieReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconMovieReport.UseVisualStyleBackColor = true;
-            this.iconMovieReport.Click += new System.EventHandler(this.iconMovieReport_Click);
             // 
             // iconMovieRecord
             // 
@@ -296,49 +271,6 @@ namespace StuuwyRentingFilms
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
-            // lblTitleChildForm
-            // 
-            this.lblTitleChildForm.AutoSize = true;
-            this.lblTitleChildForm.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblTitleChildForm.Location = new System.Drawing.Point(56, 43);
-            this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(49, 17);
-            this.lblTitleChildForm.TabIndex = 2;
-            this.lblTitleChildForm.Text = " Home";
-            // 
-            // iconCurrentChildForm
-            // 
-            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.MediumPurple;
-            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconCurrentChildForm.IconColor = System.Drawing.Color.MediumPurple;
-            this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildForm.IconSize = 43;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(6, 29);
-            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
-            this.iconCurrentChildForm.Size = new System.Drawing.Size(44, 43);
-            this.iconCurrentChildForm.TabIndex = 1;
-            this.iconCurrentChildForm.TabStop = false;
-            // 
-            // panelShadow
-            // 
-            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
-            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelShadow.Location = new System.Drawing.Point(220, 75);
-            this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(1070, 9);
-            this.panelShadow.TabIndex = 2;
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(220, 84);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1070, 602);
-            this.panelDesktop.TabIndex = 3;
-            // 
             // iconMinimaze
             // 
             this.iconMinimaze.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -387,6 +319,49 @@ namespace StuuwyRentingFilms
             this.iconClose.TabStop = false;
             this.iconClose.Click += new System.EventHandler(this.iconClose_Click);
             // 
+            // lblTitleChildForm
+            // 
+            this.lblTitleChildForm.AutoSize = true;
+            this.lblTitleChildForm.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblTitleChildForm.Location = new System.Drawing.Point(56, 43);
+            this.lblTitleChildForm.Name = "lblTitleChildForm";
+            this.lblTitleChildForm.Size = new System.Drawing.Size(49, 17);
+            this.lblTitleChildForm.TabIndex = 2;
+            this.lblTitleChildForm.Text = " Home";
+            // 
+            // iconCurrentChildForm
+            // 
+            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.MediumPurple;
+            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.iconCurrentChildForm.IconColor = System.Drawing.Color.MediumPurple;
+            this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconCurrentChildForm.IconSize = 43;
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(6, 29);
+            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(44, 43);
+            this.iconCurrentChildForm.TabIndex = 1;
+            this.iconCurrentChildForm.TabStop = false;
+            // 
+            // panelShadow
+            // 
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
+            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelShadow.Location = new System.Drawing.Point(220, 75);
+            this.panelShadow.Name = "panelShadow";
+            this.panelShadow.Size = new System.Drawing.Size(1070, 9);
+            this.panelShadow.TabIndex = 2;
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(220, 84);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(1070, 602);
+            this.panelDesktop.TabIndex = 3;
+            // 
             // MDI_Administrator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -404,10 +379,10 @@ namespace StuuwyRentingFilms
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconMinimaze)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconMaximaze)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -420,7 +395,6 @@ namespace StuuwyRentingFilms
         private FontAwesome.Sharp.IconButton iconUpdateMovieInfo;
         private FontAwesome.Sharp.IconButton iconViewUserInfo;
         private FontAwesome.Sharp.IconButton iconAddUser;
-        private FontAwesome.Sharp.IconButton iconMovieReport;
         private FontAwesome.Sharp.IconButton iconMovieRecord;
         private FontAwesome.Sharp.IconButton iconIssueMovie;
         private FontAwesome.Sharp.IconButton iconAddNewMovie;

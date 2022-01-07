@@ -40,8 +40,8 @@ namespace StuuwyRentingFilms
             da.Fill(dt);
             if (dt.Rows.Count >= 1) // Ako postoi barem 1 kolona so takvi userName OR email
             {
-                labelControl.Text = "Indeks or email are already taken.";
-                MessageBox.Show("Indeks or email are already taken.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); // ispisi poraka
+                labelControl.Text = "Email is already taken.";
+                MessageBox.Show("Email is already taken.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); // ispisi poraka
                 return;
             }
             if (userFirst.Text.Length == 0 || userLast.Text.Length == 0 || userEmail.Text.Length == 0 || userPassword.Text.Length == 0 || userConPass.Text.Length == 0) // ako se prazni textBox-ovite
